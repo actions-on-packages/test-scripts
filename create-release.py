@@ -9,6 +9,9 @@ headers = {
 }
 
 response = requests.get(source_repo_url, headers={'Authorization': 'token ' + ACCESS_TOKEN})
+if response.status_code != 200:
+    print("something went wrong during fetching releases from source repo with status code " + str(response.status_code) + " with message - " + str(response.text)+ ".Hence aborting the process")
+    exit(1)
 #print(response.json())
 releases_list = response.json()
 num_releases = len(releases_list)

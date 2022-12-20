@@ -1,8 +1,8 @@
 import requests
 
-ACCESS_TOKEN = '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'
-source_repo_url = 'https://api.github.com/repos/actions/setup-node/releases?per_page=100'
-target_repo_url = 'https://api.github.com/repos/vinay-personal-org/setup-node/releases'
+ACCESS_TOKEN = '<update_here>'
+source_repo_url = '<update_here>' #'https://api.github.com/repos/actions/setup-node/releases?per_page=100'
+target_repo_url = '<update_here>' #'https://api.github.com/repos/vinay-personal-org/setup-node/releases'
 headers = {
     'Authorization': 'token ' + ACCESS_TOKEN,
     'Accept': 'application/vnd.github.v3+json'

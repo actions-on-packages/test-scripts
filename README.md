@@ -5,7 +5,7 @@ Prior to mirroring releases, source repo needs to be mirrored to target repo
 1. Create a new TARGET_REPOSITORY repo eg:'setup-node' in your org of choice via GUI
 2. In your terminal enter "git clone --bare https://github.com/EXAMPLE-ORG/SOURCE-REPOSITORY.git"
 3. cd SOURCE-REPOSITORY.git
-4. git push --mirror *https://github.com/EXAMPLE-USER/TARGET-REPOSITORY.git*
+4. git push --mirror https://github.com/EXAMPLE-USER/TARGET-REPOSITORY.git"
 5. cd ..
 6. rm -rf SOURCE-REPOSITORY.git
 
